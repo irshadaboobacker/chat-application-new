@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Textiko</title>
+  <link rel="stylesheet" href="./css/stylelogin.css">
+</head>
+<body>
+  <div class="page-header">
+    <h1>Textiko</h1>
+
+    <button class="login-button">Log In</button>
+  </div>
+    <div class="login-box">
+        <h2>Sign Up</h2>
+        <form id="signupForm">
+          <div class="user-box">
+            <input type="text" id="username" name="username" required="">
+            <label>Username</label>
+          </div>
+          <div class="user-box">
+            <input type="email" id="email" name="email" required="">
+            <label>Email</label>
+          </div>
+          <div class="user-box">
+            <input type="password" id="password" name="password"  minlength="6" required="">
+            <label>Password</label>
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+        <div class="present-user">
+            <p>Already have an Account?? <a id="loginlink" href="./login.html">Login</a></p> 
+        </div>
+        <div class="signmsg-box">
+          <h5 class="error-msg"> Username or email already exists</h5>
+        </div>
+        <div class="signmsg-successfull">
+          <h5 class="error-msg"> Registered✅</h5>
+        </div>
+      </div>
+  <script src="./js/signup.js"></script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+{
+  "name": "chat-application",
+  "version": "1.0.0",
+  "description": "Creating a Chat Application using Node.js, Express, Socket.io, MongoDB and HTML & CSS",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server",
+    "dev": "nodemon server"
+  },
+  "author": "Neelabh Sinha",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.17.1",
+    "moment": "^2.26.0",
+    "mongodb": "^3.5.9",
+    "mongoose": "^8.1.0",
+    "socket.io": "^4.7.4"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}

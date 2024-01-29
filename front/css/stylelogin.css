@@ -1,0 +1,215 @@
+
+html {
+    height: 100%;
+  }
+  body {
+    margin:0;
+    padding:0;
+    font-family: sans-serif;
+    background: linear-gradient(#141e30, #243b55);
+  }
+  
+  .login-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 32rem;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: rgba(0,0,0,.5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+    animation: fadeIn 0.3s linear;
+  }
+  
+  @keyframes fadeIn {
+      from {
+          opacity: 0;
+  
+          to {
+              opacity: 1;
+          }
+      }
+  }
+  
+  .login-box h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .login-box .user-box {
+    position: relative;
+  }
+  
+  .login-box .user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+  }
+  .login-box .user-box label {
+    position: absolute;
+    top:0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+  }
+  
+  .login-box .user-box input:focus ~ label,
+  .login-box .user-box input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: #03e9f4;
+    font-size: 12px;
+  }
+  
+  .login-box form button {
+    background: none;
+    border: none;
+    margin-left: 30%;
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #03e9f4;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px
+  }
+  
+  .login-box button:hover {
+    background: #03e9f4;
+    color: #fff;
+    border-radius: 5px;
+  }
+  
+  .login-box a span {
+    position: absolute;
+    display: block;
+  }
+  
+
+.present-user{
+    color: #fff;
+    margin-left: 15%;
+}
+
+#loginlink{
+    color: #fff;
+    text-decoration: none;
+}
+
+#loginlink:hover{
+    text-decoration: underline;
+    background: none;
+
+}
+
+.new-user{
+    color: #fff;
+    margin-left: 20%;
+}
+  
+
+.error-msg{
+
+  color: white;
+  text-align: center;
+  animation: shake 0.2s ;
+}
+@keyframes shake {
+    0% {
+      margin-left: 0rem;
+    }
+    25% {
+      margin-left: 0.5rem;
+    }
+    75% {
+      margin-left: -0.5rem;
+    }
+    100% {
+      margin-left: 0rem;
+    }
+  }
+  .msg-box{
+    display: none;
+  }
+
+  .signmsg-box{
+    display: none;
+  }
+  .signmsg-successfull{
+    display: none;
+  }
+
+  .page-header{
+    margin-top: 0rem;
+    display: flex;
+  }
+  .page-header h1 {
+    margin-left: 2.5%;
+    color: #03e9f4;
+    transition: .5s;
+    letter-spacing: 4px;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+  
+  .signin-button, .login-button{
+
+    height: 2.2rem;
+    margin-top: 1.3rem;
+    width: 6rem;
+    margin-left: 79%;
+    background: rgba(0, 0, 0, .5);
+    border: none;
+    border-radius: 0.3rem;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .signin-button:hover{
+    color: #03e9f4;
+  }
+
+  .login-button:hover{
+    color: #03e9f4;
+  }
+
+  #password-strength{
+  
+    color: white;
+    animation: shake 0.2s ;
+  }
+  @keyframes shake {
+      0% {
+        margin-left: 0rem;
+      }
+      25% {
+        margin-left: 0.5rem;
+      }
+      75% {
+        margin-left: -0.5rem;
+      }
+      100% {
+        margin-left: 0rem;
+      }
+    }
+
+
+  
